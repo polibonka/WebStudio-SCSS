@@ -1,0 +1,24 @@
+//base
+
+@import "./base/fonts";
+@import "./base/reset";
+@import "./base/general";
+
+//utils
+
+@import "./utils/colors";
+@import "./utils/placeholder";
+@import "./utils/mixins";
+
+// components
+
+@import "./components/header";
+@import "./components/modal";
+@import "./components/title";
+@import "./components/descr";
+@import "./components/img";
+@import "./components/workers";
+@import "./components/clients";
+@import "./components/footer";
+@import "./components/btn_nav";
+@import "./components/our_work";
