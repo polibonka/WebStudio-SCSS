@@ -9,23 +9,25 @@
   <body>
     <header class="header">
       <div class="container">
-        <h2 class="header_logo"><span>Web</span>Studio</h2>
-        <nav class="header_nav">
-          <ul class="header_list">
-            <li class="header_item">
-              <a class="header_link link_active" href="./index.html">Студія</a>
+        <h2 class="header__logo"><span>Web</span>Studio</h2>
+        <nav class="header__nav">
+          <ul class="header__list">
+            <li class="header__item">
+              <a class="header__link link__active" href="./index.html"
+                >Студія</a
+              >
             </li>
-            <li class="header_item">
-              <a class="header_link" href="./portfolio.html">Портфоліо</a>
+            <li class="header__item">
+              <a class="header__link" href="./portfolio.html">Портфоліо</a>
             </li>
-            <li class="header_item">
-              <a class="header_link" href="#">Контакти</a>
+            <li class="header__item">
+              <a class="header__link" href="#">Контакти</a>
             </li>
           </ul>
         </nav>
 
-        <div class="header_contacts">
-          <a href="mailto:info@devstudio.com">
+        <div class="header__contacts">
+          <a class="header__mail" href="mailto:info@devstudio.com">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="16"
@@ -40,7 +42,7 @@
             </svg>
             info@devstudio.com</a
           >
-          <a class="header_phone-link" href="tel:+380961111111"
+          <a class="header__phone" href="tel:+380961111111"
             ><svg
               xmlns="http://www.w3.org/2000/svg"
               width="10"
@@ -65,17 +67,17 @@
     <main>
       <section class="title">
         <div class="container">
-          <h1 class="title_title">
+          <h1 class="title__title">
             Ефективні рішення для <br />
             вашого бізнесу
           </h1>
-          <button class="title_btn" data-open-modal>Замовити послугу</button>
+          <button class="title__btn" data-open-modal>Замовити послугу</button>
           <div
             class="backdrop is-hidden animate__animated animate__pulse"
             data-modal
           >
             <div class="modal">
-              <button class="btn_close" data-close-modal>
+              <button class="btn__close" data-close-modal>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="18"
@@ -91,11 +93,11 @@
               </button>
 
               <form class="form">
-                <h3 class="form_title">
+                <h3 class="form__title">
                   Залиште свої дані, ми вам передзвонимо
                 </h3>
-                <label class="form_name">Ім'я</label>
-                <div class="form_box">
+                <label class="form__name">Ім'я</label>
+                <div class="form__box">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="18"
@@ -115,10 +117,10 @@
                       </clipPath>
                     </defs>
                   </svg>
-                  <input type="text" class="form_input" required />
+                  <input type="text" class="form__input" required />
                 </div>
-                <label class="form_name">Телефон</label>
-                <div class="form_box">
+                <label class="form__name">Телефон</label>
+                <div class="form__box">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="18"
@@ -138,10 +140,10 @@
                       </clipPath>
                     </defs>
                   </svg>
-                  <input type="tel" class="form_input" required />
+                  <input type="tel" class="form__input" required />
                 </div>
-                <label class="form_name">Пошта</label>
-                <div class="form_box">
+                <label class="form__name">Пошта</label>
+                <div class="form__box">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="18"
@@ -161,25 +163,27 @@
                       </clipPath>
                     </defs>
                   </svg>
-                  <input type="email" class="form_input" required />
+                  <input type="email" class="form__input" required />
                 </div>
-                <label class="form_name">Коментар</label>
-                <div class="form_textarea">
+                <label class="form__name">Коментар</label>
+                <div class="form__textarea">
                   <textarea
                     name="text"
                     id="text"
-                    class="form_message"
+                    class="form__message"
                     placeholder="Введіть текст"
                     required
                   ></textarea>
                 </div>
-                <div class="form_modal-contract">
+                <div class="form form--modal">
                   <input type="checkbox" checked required />
-                  <p class="form_contract">Погоджуюся з розсилкою та приймаю</p>
-                  <a class="form_contract-link" href="#"> Умови договору</a>
+                  <p class="form form--text">
+                    Погоджуюся з розсилкою та приймаю
+                  </p>
+                  <a class="form form--link" href="#"> Умови договору</a>
                 </div>
-                <div class="form_box-btn">
-                  <button class="form_modal-btn">Відправити</button>
+                <div class="form form--box">
+                  <button class="form form--btn">Відправити</button>
                 </div>
               </form>
             </div>
@@ -188,37 +192,37 @@
       </section>
       <section class="descr">
         <div class="container">
-          <ul class="descr_list">
-            <li class="descr_item">
-              <div class="descr_item_rectangle"></div>
+          <ul class="descr__list">
+            <li class="descr__item">
+              <div class="descr__rectangle"></div>
 
-              <h3 class="descr_sub_title">УВАГА ДО ДЕТАЛЕЙ</h3>
-              <p class="descr_description">
+              <h3 class="descr__subtitle">УВАГА ДО ДЕТАЛЕЙ</h3>
+              <p class="descr__description">
                 Ідейні міркування, і навіть початок <br />
                 повсякденної роботи формування <br />
                 позиції.
               </p>
             </li>
-            <li class="descr_item">
-              <div class="descr_item_rectangle"></div>
-              <h3 class="descr_sub_title">ПУНКТУАЛЬНІСТЬ</h3>
-              <p class="descr_description">
+            <li class="descr__item">
+              <div class="descr__rectangle"></div>
+              <h3 class="descr__subtitle">ПУНКТУАЛЬНІСТЬ</h3>
+              <p class="descr__description">
                 Завдання організації, особливо рамки <br />
                 і місце навчання кадрів тягне у себе.
               </p>
             </li>
-            <li class="descr_item">
-              <div class="descr_item_rectangle"></div>
-              <h3 class="descr_sub_title">ПЛАНУВАННЯ</h3>
-              <p class="descr_description">
+            <li class="descr__item">
+              <div class="descr__rectangle"></div>
+              <h3 class="descr__subtitle">ПЛАНУВАННЯ</h3>
+              <p class="descr__description">
                 Так само консультація з широким <br />
                 активом значною мірою зумовлює.
               </p>
             </li>
-            <li class="descr_item">
-              <div class="descr_item_rectangle"></div>
-              <h3 class="descr_sub_title">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
-              <p class="descr_description">
+            <li class="descr__item">
+              <div class="descr__rectangle"></div>
+              <h3 class="descr__subtitle">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
+              <p class="descr__description">
                 Значимість цих проблем настільки <br />
                 очевидна, що реалізація планових <br />
                 завдань.
@@ -230,19 +234,19 @@
 
       <section class="img">
         <div class="container">
-          <h2 class="img_title">Чим ми займаємося</h2>
-          <ul class="img_list">
-            <li class="img_item">
-              <img class="img_picture" src="./img/box_1.jpg" alt="img1" />
-              <span class="work_desk">Десктопні додатки</span>
+          <h2 class="img__title">Чим ми займаємося</h2>
+          <ul class="img__list">
+            <li class="img__item">
+              <img class="img__picture" src="./img/box_1.jpg" alt="img1" />
+              <span class="work__desk">Десктопні додатки</span>
             </li>
-            <li class="img_item">
-              <img class="img_picture" src="./img/box_2.jpg" alt="img2" />
-              <span class="work_desk">Мобільні додатки</span>
+            <li class="img__item">
+              <img class="img__picture" src="./img/box_2.jpg" alt="img2" />
+              <span class="work__desk">Мобільні додатки</span>
             </li>
-            <li class="img_item">
-              <img class="img_picture" src="./img/box_3.jpg" alt="img3" />
-              <span class="work_desk">Дизайнерські рішення</span>
+            <li class="img__item">
+              <img class="img__picture" src="./img/box_3.jpg" alt="img3" />
+              <span class="work__desk">Дизайнерські рішення</span>
             </li>
           </ul>
         </div>
@@ -250,27 +254,27 @@
 
       <section class="workers">
         <div class="container">
-          <h2 class="workers_title">Наша команда</h2>
-          <ul class="workers_list">
-            <li class="workers_item">
+          <h2 class="workers__title">Наша команда</h2>
+          <ul class="workers__list">
+            <li class="workers__item">
               <img
-                class="workers_img"
+                class="workers__img"
                 src="./img/project_designer.jpg"
-                alt="project_designer"
+                alt="project__designer"
               />
-              <h3 class="workers_subtitle">Ігор Дем'яненко</h3>
-              <h4 class="workers_lead">Product Designer</h4>
-              <div class="worker_links">
-                <button class="workers_btn">
+              <h3 class="workers__subtitle">Ігор Дем'яненко</h3>
+              <h4 class="workers__lead">Product Designer</h4>
+              <div class="worker__links">
+                <button class="workers__btn">
                   <i class="fa-brands fa-instagram" style="color: #0c0d0d"></i>
                 </button>
-                <button class="workers_btn">
+                <button class="workers__btn">
                   <i class="fa-brands fa-twitter" style="color: #0c0d0d"></i>
                 </button>
-                <button class="workers_btn">
+                <button class="workers__btn">
                   <i class="fa-brands fa-facebook-f" style="color: #111212"></i>
                 </button>
-                <button class="workers_btn">
+                <button class="workers__btn">
                   <i
                     class="fa-brands fa-linkedin-in"
                     style="color: #19191a"
@@ -278,25 +282,25 @@
                 </button>
               </div>
             </li>
-            <li class="workers_item">
+            <li class="workers__item">
               <img
-                class="workers_img"
+                class="workers__img"
                 src="./img/front-end_developer.jpg"
                 alt="front-end_developer"
               />
-              <h3 class="workers_subtitle">Ольга Рєпіна</h3>
-              <h4 class="workers_lead">Frontend Developer</h4>
-              <div class="worker_links">
-                <button class="workers_btn">
+              <h3 class="workers__subtitle">Ольга Рєпіна</h3>
+              <h4 class="workers__lead">Frontend Developer</h4>
+              <div class="worker__links">
+                <button class="workers__btn">
                   <i class="fa-brands fa-instagram" style="color: #0c0d0d"></i>
                 </button>
-                <button class="workers_btn">
+                <button class="workers__btn">
                   <i class="fa-brands fa-twitter" style="color: #0c0d0d"></i>
                 </button>
-                <button class="workers_btn">
+                <button class="workers__btn">
                   <i class="fa-brands fa-facebook-f" style="color: #111212"></i>
                 </button>
-                <button class="workers_btn">
+                <button class="workers__btn">
                   <i
                     class="fa-brands fa-linkedin-in"
                     style="color: #19191a"
@@ -304,25 +308,25 @@
                 </button>
               </div>
             </li>
-            <li class="workers_item">
+            <li class="workers__item">
               <img
                 class="workers_img"
                 src="./img/marketing.jpg"
                 alt="marketing"
               />
-              <h3 class="workers_subtitle">Микола Тарасов</h3>
-              <h4 class="workers_lead">Marketing</h4>
-              <div class="worker_links">
-                <button class="workers_btn">
+              <h3 class="workers__subtitle">Микола Тарасов</h3>
+              <h4 class="workers__lead">Marketing</h4>
+              <div class="worker__links">
+                <button class="workers__btn">
                   <i class="fa-brands fa-instagram" style="color: #0c0d0d"></i>
                 </button>
-                <button class="workers_btn">
+                <button class="workers__btn">
                   <i class="fa-brands fa-twitter" style="color: #0c0d0d"></i>
                 </button>
-                <button class="workers_btn">
+                <button class="workers__btn">
                   <i class="fa-brands fa-facebook-f" style="color: #111212"></i>
                 </button>
-                <button class="workers_btn">
+                <button class="workers__btn">
                   <i
                     class="fa-brands fa-linkedin-in"
                     style="color: #19191a"
@@ -330,25 +334,25 @@
                 </button>
               </div>
             </li>
-            <li class="workers_item">
+            <li class="workers__item">
               <img
-                class="workers_img"
+                class="workers__img"
                 src="./img/ui_design.jpg"
                 alt="ui_design"
               />
-              <h3 class="workers_subtitle">Михайло Єрмаков</h3>
-              <h4 class="workers_lead">UI Designer</h4>
-              <div class="worker_links">
-                <button class="workers_btn">
+              <h3 class="workers__subtitle">Михайло Єрмаков</h3>
+              <h4 class="workers__lead">UI Designer</h4>
+              <div class="worker__links">
+                <button class="workers__btn">
                   <i class="fa-brands fa-instagram" style="color: #0c0d0d"></i>
                 </button>
-                <button class="workers_btn">
+                <button class="workers__btn">
                   <i class="fa-brands fa-twitter" style="color: #0c0d0d"></i>
                 </button>
-                <button class="workers_btn">
+                <button class="workers__btn">
                   <i class="fa-brands fa-facebook-f" style="color: #111212"></i>
                 </button>
-                <button class="workers_btn">
+                <button class="workers__btn">
                   <i
                     class="fa-brands fa-linkedin-in"
                     style="color: #19191a"
@@ -361,11 +365,11 @@
       </section>
       <section class="clients">
         <div class="container">
-          <h2 class="clients_title">Постійні клієнти</h2>
+          <h2 class="clients__title">Постійні клієнти</h2>
 
           <ul class="clients_brands animate__animated animate__slideInLeft">
-            <li class="clients_link">
-              <a href="#" class="clients_link">
+            <li class="clients__link">
+              <a href="#" class="clients__link">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="106"
@@ -382,8 +386,8 @@
                 </svg>
               </a>
             </li>
-            <li class="clients_link">
-              <a href="#" class="clients_link"
+            <li class="clients__link">
+              <a href="#" class="clients__link"
                 ><svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="106"
