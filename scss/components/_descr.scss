@@ -1,0 +1,63 @@
+.descr {
+  background: $title-color;
+  &__list {
+    padding-top: 94px;
+    padding-bottom: 94px;
+    gap: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+  }
+  &__description {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    color: #757575;
+  }
+  &__subtitle {
+    color: #212121;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.42px;
+    text-transform: uppercase;
+  }
+}
+
+.descr__rectangle {
+  &::before {
+    content: "";
+    background-image: url(../img/svg/radar.svg);
+    width: 70px;
+    height: 70px;
+    display: block;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+.descr__item {
+  &:nth-child(2) {
+    .descr__rectangle {
+      &::before {
+        background-image: url(../img/svg/clock.svg);
+      }
+    }
+  }
+  &:nth-child(3) {
+    .descr__rectangle {
+      &::before {
+        background-image: url(../img/svg/diagram2.svg);
+      }
+    }
+  }
+  &:nth-child(4) {
+    .descr__rectangle {
+      &::before {
+        background-image: url(../img/svg/astronaut.svg);
+      }
+    }
+  }
+}

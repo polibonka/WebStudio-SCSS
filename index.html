@@ -9,11 +9,13 @@
   <body>
     <header class="header">
       <div class="container">
-        <h2 class="header__logo"><span>Web</span>Studio</h2>
+        <h2 class="header__logo">
+          <span class="header__logoo">Web</span>Studio
+        </h2>
         <nav class="header__nav">
           <ul class="header__list">
             <li class="header__item">
-              <a class="header__link link__active" href="./index.html"
+              <a class="header__link header__link--active" href="./index.html"
                 >Студія</a
               >
             </li>
@@ -27,7 +29,7 @@
         </nav>
 
         <div class="header__contacts">
-          <a class="header__mail" href="mailto:info@devstudio.com">
+          <a class="header__contact" href="mailto:info@devstudio.com">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="16"
@@ -42,7 +44,7 @@
             </svg>
             info@devstudio.com</a
           >
-          <a class="header__phone" href="tel:+380961111111"
+          <a class="header__contact" href="tel:+380961111111"
             ><svg
               xmlns="http://www.w3.org/2000/svg"
               width="10"
@@ -237,15 +239,15 @@
           <h2 class="img__title">Чим ми займаємося</h2>
           <ul class="img__list">
             <li class="img__item">
-              <img class="img__picture" src="./img/box_1.jpg" alt="img1" />
+              <img class="img__picture" src="./img/img/box_1.jpg" alt="img1" />
               <span class="work__desk">Десктопні додатки</span>
             </li>
             <li class="img__item">
-              <img class="img__picture" src="./img/box_2.jpg" alt="img2" />
+              <img class="img__picture" src="./img/img/box_2.jpg" alt="img2" />
               <span class="work__desk">Мобільні додатки</span>
             </li>
             <li class="img__item">
-              <img class="img__picture" src="./img/box_3.jpg" alt="img3" />
+              <img class="img__picture" src="./img/img/box_3.jpg" alt="img3" />
               <span class="work__desk">Дизайнерські рішення</span>
             </li>
           </ul>
@@ -259,7 +261,7 @@
             <li class="workers__item">
               <img
                 class="workers__img"
-                src="./img/project_designer.jpg"
+                src="./img/img/project_designer.jpg"
                 alt="project__designer"
               />
               <h3 class="workers__subtitle">Ігор Дем'яненко</h3>
@@ -285,7 +287,7 @@
             <li class="workers__item">
               <img
                 class="workers__img"
-                src="./img/front-end_developer.jpg"
+                src="./img/img/front-end_developer.jpg"
                 alt="front-end_developer"
               />
               <h3 class="workers__subtitle">Ольга Рєпіна</h3>
@@ -310,8 +312,8 @@
             </li>
             <li class="workers__item">
               <img
-                class="workers_img"
-                src="./img/marketing.jpg"
+                class="workers__img"
+                src="./img/img/marketing.jpg"
                 alt="marketing"
               />
               <h3 class="workers__subtitle">Микола Тарасов</h3>
@@ -337,7 +339,7 @@
             <li class="workers__item">
               <img
                 class="workers__img"
-                src="./img/ui_design.jpg"
+                src="./img/img/ui_design.jpg"
                 alt="ui_design"
               />
               <h3 class="workers__subtitle">Михайло Єрмаков</h3>
@@ -515,8 +517,8 @@
               ></a>
             </li>
 
-            <li class="clients_brand">
-              <a href="#" class="clients_link">
+            <li class="clients__brand">
+              <a href="#" class="clients__link">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="106"
@@ -579,8 +581,8 @@
                 </svg>
               </a>
             </li>
-            <li class="clients_brand">
-              <a href="#" class="clients_link"
+            <li class="clients__brand">
+              <a href="#" class="clients__link"
                 ><svg
                   width="106"
                   height="60"
@@ -607,8 +609,8 @@
                 </svg>
               </a>
             </li>
-            <li class="clients_brand">
-              <a href="#" class="clients_link"
+            <li class="clients__brand">
+              <a href="#" class="clients__link"
                 ><svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="106"
@@ -658,8 +660,8 @@
                   /></svg
               ></a>
             </li>
-            <li class="clients_brand">
-              <a href="#" class="clients_link"
+            <li class="clients__brand">
+              <a href="#" class="clients__link"
                 ><svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="106"
@@ -747,7 +749,7 @@
     </main>
     <footer class="footer">
       <div class="container">
-        <h2 class="footer_logo"><span>Web</span>Studio</h2>
+        <h2 class="footer__logo"><span>Web</span>Studio</h2>
         <p>
           <a
             class="footer_link"
@@ -756,26 +758,27 @@
             м. Київ, пр-т Лесі Українки, 26
           </a>
         </p>
-        <address class="footer_address">
+        <address class="footer__address">
           <a href="mailto:info@devstudio.com">info@devstudio.com</a>
           <a href="tel:+380961111111">+38 096 111 11 11</a>
         </address>
-        <div class="footer_socials">
-          <p class="footer_text">Приєднуйтесь</p>
-          <button class="footer_btn">
+        <div class="footer__socials">
+          <p class="footer__text">Приєднуйтесь</p>
+          <button class="footer__btn">
             <i class="fa-brands fa-instagram" style="color: #0c0d0d"></i>
           </button>
-          <button class="footer_btn">
+          <button class="footer__btn">
             <i class="fa-brands fa-twitter" style="color: #0c0d0d"></i>
           </button>
-          <button class="footer_btn">
+          <button class="footer__btn">
             <i class="fa-brands fa-facebook-f" style="color: #111212"></i>
           </button>
-          <button class="footer_btn">
+          <button class="footer__btn">
             <i class="fa-brands fa-linkedin-in" style="color: #19191a"></i>
           </button>
         </div>
       </div>
     </footer>
   </body>
+  <script src="./modal.js"></script>
 </html>
