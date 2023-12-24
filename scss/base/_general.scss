@@ -8,11 +8,17 @@ ul {
 }
 
 .container {
-  width: 1170px;
+  padding: 0 15px;
+  max-width: 100%;
   margin: 0 auto;
+  @media (min-width: 768px) {
+    max-width: 738px;
+    padding: 0;
+  }
+  @media (min-width: 1200px) {
+    max-width: 1170px;
+  }
 }
-
-
 
 a {
   color: #757575;
@@ -20,4 +26,7 @@ a {
   &:hover {
     color: #2196f3;
   }
+}
+.container {
+  height: 100%;
 }

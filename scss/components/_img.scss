@@ -1,0 +1,45 @@
+.img {
+  @media (max-width: 1200px) {
+    display: none;
+  }
+  &__title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #212121;
+  }
+  &__list {
+    padding-bottom: 94px;
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+  }
+  &__item {
+    position: relative;
+  }
+  &__desk {
+    color: #fff;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.42px;
+    text-transform: uppercase;
+    width: 370px;
+    height: 70px;
+    background: rgba(47, 48, 58, 0.8);
+    display: block;
+    padding: 27px 0;
+    position: absolute;
+    bottom: 0px;
+  }
+}
+
+.container {
+  height: 100%;
+}

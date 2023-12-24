@@ -7,6 +7,11 @@
     display: flex;
     justify-content: space-between;
     align-items: start;
+    flex-wrap: wrap;
+    @media (max-width: 768px) {
+      padding-top: 60px;
+      padding-bottom: 60px;
+    }
   }
   &__description {
     font-style: normal;
@@ -15,6 +20,9 @@
     line-height: 24px;
     letter-spacing: 0.03em;
     color: #757575;
+    @media (max-width: 768px) {
+      text-align: center;
+    }
   }
   &__subtitle {
     color: #212121;
@@ -24,10 +32,18 @@
     line-height: normal;
     letter-spacing: 0.42px;
     text-transform: uppercase;
+    @media (max-width: 768px) {
+      text-align: center;
+    }
   }
 }
 
 .descr__rectangle {
+  position: relative;
+  width: 100%;
+  height: 120px;
+  border-radius: 4px;
+  background-color: #f5f4fa;
   &::before {
     content: "";
     background-image: url(../img/svg/radar.svg);
@@ -35,7 +51,14 @@
     height: 70px;
     display: block;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: center center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  @media (max-width: 768px) {
+    width: 354px;
   }
 }
 .descr__item {

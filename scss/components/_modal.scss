@@ -19,14 +19,20 @@
     padding-left: 9px;
     display: flex;
     align-items: center;
+    @media (max-width: 768px) {
+      width: 370px;
+    }
   }
   &__input {
     border-radius: 4px;
     width: 415px;
     height: 38px;
-    flex-shrink: 0;
+  
     outline: none;
     border: none;
+    @media (max-width: 768px) {
+      width: 360px;
+    }
   }
   &__message {
     &:hover {
@@ -40,6 +46,9 @@
     border: none;
     resize: none;
     padding: 12px 16px 12px 16px;
+    @media (max-width: 768px) {
+      width: 370px;
+    }
   }
   &__textarea {
     border-radius: 4px;
@@ -47,6 +56,9 @@
     width: 448px;
     height: 120px;
     margin-top: 6px;
+    @media (max-width: 768px) {
+      width: 370px;
+    }
   }
   &--text {
     color: #757575;
@@ -56,6 +68,11 @@
     font-weight: 400;
     line-height: 24px; /* 171.429% */
     letter-spacing: 0.42px;
+    @media (max-width: 768px) {
+      font-size: 12px;
+      line-height: normal;
+      letter-spacing: 0.36px;
+    }
   }
   &--link {
     color: #2196f3;
@@ -67,12 +84,18 @@
     letter-spacing: 0.42px;
     text-decoration-line: underline;
     margin-top: 13px;
+    @media (max-width: 768px) {
+      margin-top: 7px;
+    }
   }
   &--modal {
     display: flex;
     gap: 7px;
     padding-left: 13px;
     padding-top: 20px;
+    @media (max-width: 768px) {
+      padding-left: 0;
+    }
   }
   &__name {
     color: #757575;
@@ -91,6 +114,9 @@
     line-height: normal;
     letter-spacing: 0.6px;
     margin: -21px 0 12px;
+    @media (max-width) {
+      line-height: 30px;
+    }
   }
   &--btn {
     @extend %btn;
@@ -99,6 +125,9 @@
     display: flex;
     justify-content: center;
     padding-top: 20px;
+    @media (min-width: 768px) {
+      padding-top: 0;
+    }
   }
 }
 
@@ -108,7 +137,7 @@
 
 .modal {
   position: absolute;
-  top: 50%;
+  top: 61%;
   left: 50%;
   transform: translate(-50%, -50%);
   transition: 0, 5s ease-in;
@@ -127,6 +156,7 @@
   width: 100%;
   height: 100%;
   opacity: 1;
+  z-index: 100;
 }
 
 .is-hidden {
@@ -150,4 +180,26 @@
   left: 449px;
   bottom: 26px;
   cursor: pointer;
+  @media (max-width: 768px) {
+    left: 360px;
+  }
+}
+.container {
+  height: 100%;
+}
+
+.modal {
+  @media (max-width: 768px) {
+    width: 450px;
+    height: 609px;
+  }
+
+  // @media (max-width: 1200px) {
+  //   width: 528px;
+  //   height: 581px;
+  // }
+  // @media (min-width: 1200px) {
+  //   width: 528px;
+  //   height: 581px;
+  // }
 }
