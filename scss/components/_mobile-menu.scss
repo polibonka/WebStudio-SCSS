@@ -12,6 +12,14 @@
     position: absolute;
     right: 8px;
     top: 8px;
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    cursor: pointer;
+    &:hover {
+      path {
+        fill: #2196f3;
+      }
+    }
   }
   &__link {
     color: #212121;
