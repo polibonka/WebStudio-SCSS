@@ -97,6 +97,12 @@
     top: -22px;
     left: 62px;
   }
+  &__wraper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 32px;
+  }
 }
 .is-open {
   left: 0;
